@@ -1,17 +1,27 @@
 @import './vars/vars';
 
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Playball&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    height: 200vh;
 
-    background-color: black;
+    background-color: $bg-color;
 
     color: white;
+
+    font-family: 'Merriweather', serif;
 }
 
-@import './navbar/navbar'
+#root {
+    margin-top: 100px;
+}
+
+@import './navbar/navbar';
+@import './navbar/navbar';
 
 
