@@ -1,5 +1,7 @@
 import React from 'react'
 
+import crescent from '../../img/crescent.png'
+
 export default function Navbar({ showNavbar }) {
     const navbarClasses = (showNavbar ? `navbar` : 'navbar hide' )
     return (
@@ -8,6 +10,9 @@ export default function Navbar({ showNavbar }) {
                 className={navbarClasses}>
                 <div className="navbar-logo">
                     <h1>JakubMoryc</h1>
+                </div>
+                <div className="navbar-theme-switcher">
+                    <img src={crescent}/>
                 </div>
                 <div className="navbar-links">
                     <div className="navbar-links-item">

@@ -1,3 +1,24 @@
-.jumbotron {
-    height: 50vh;
+.jumbotron-section {
+    padding: 6rem;
+
+    @include d-flex-row-center-center;
+
+    .jumbotron {
+        width: fit-content;
+
+        font-size: 3.5rem;
+        font-weight: 300;
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .jumbotron-small-text {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+
+            text-align: right;
+        }
+    }
 }
