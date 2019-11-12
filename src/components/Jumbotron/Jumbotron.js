@@ -14,7 +14,7 @@ export default function Jumbotron() {
                 <p className="jumbotron-small-text">
                     Below you'll find few of my projects.<br/>
                     I invite you to look at them and <a href="#">get in touch with me</a>.<br/>
-                    My main framework is React.js and I am currently learning Express.js
+                    My main framework is React.js and I am currently learning Express.js.
                 </p>
             </div>
         </section>

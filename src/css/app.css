@@ -1,12 +1,12 @@
-/* Colors */
+/* General colors */
 /* Navbar */
+/* Projects */
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400,700&display=swap");
 * {
   box-sizing: border-box; }
 
 body {
   margin: 0;
-  height: 200vh;
   background-color: black;
   color: white;
   font-family: 'Merriweather', serif; }
@@ -83,5 +83,29 @@ a {
       margin-top: 2rem;
       font-size: 1.5rem;
       text-align: right; }
+
+.projects-section {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap; }
+
+.project {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  transition-duration: 0.15s; }
+  .project:hover {
+    background: rgba(26, 26, 26, 0.5); }
+
+.project-img {
+  flex: 50%;
+  height: 25vh; }
+
+.project-desc {
+  flex: 50%; }
+
+#calculator-project-img {
+  background: url("../img/projects/before/calculator.png");
+  background-size: cover; }
 
 /*# sourceMappingURL=app.css.map */

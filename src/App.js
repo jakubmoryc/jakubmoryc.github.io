@@ -3,6 +3,7 @@ import './css/app.css';
 
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
+import Projects from './components/Projects/Projects';
 
 class App extends React.Component {
   state = {
@@ -36,12 +37,14 @@ class App extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
   }
+  
   render() {
     return (
       <div className="App">
         <Navbar showNavbar={this.state.showNavbar}/>
         <main>
           <Jumbotron/>
+          <Projects/>
         </main>
       </div>
     );

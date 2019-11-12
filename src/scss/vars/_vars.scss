@@ -1,6 +1,11 @@
-/* Colors */
+/* General colors */
 $bg-color: black;
-$navbar-color: rgba(0, 0, 0, 0.8);
+
 
 /* Navbar */
 $navbar-fade-duration: 0.25s;
+$navbar-color: rgba(0, 0, 0, 0.8);
+
+/* Projects */
+$hover-color: rgba(26, 26, 26, 0.5);
+$project-fade-duration: 0.15s;

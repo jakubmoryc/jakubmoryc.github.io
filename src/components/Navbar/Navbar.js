@@ -12,7 +12,7 @@ export default function Navbar({ showNavbar }) {
                     <h1>JakubMoryc</h1>
                 </div>
                 <div className="navbar-theme-switcher">
-                    <img src={crescent}/>
+                    <img src={crescent} alt=""/>
                 </div>
                 <div className="navbar-links">
                     <div className="navbar-links-item">
