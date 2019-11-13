@@ -20,14 +20,22 @@
 
 .project-img {
     flex: 50%;
-    height: 25vh;
+
+    overflow: hidden;
+
+    > img {
+        transition: all $img-zoom-duration ease;
+        
+        width: 100%;
+        height: auto;
+
+        &:hover {
+            transform: scale($img-zoom-scale);
+            filter: brightness(50%);
+        }
+    }
 }
 
 .project-desc {
     flex: 50%;
-}
-
-#calculator-project-img {
-    background: url('../img/projects/before/calculator.png');
-    background-size: cover;
 }

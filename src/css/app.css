@@ -99,13 +99,16 @@ a {
 
 .project-img {
   flex: 50%;
-  height: 25vh; }
+  overflow: hidden; }
+  .project-img > img {
+    transition: all 0.25s ease;
+    width: 100%;
+    height: auto; }
+    .project-img > img:hover {
+      transform: scale(1.1);
+      filter: brightness(50%); }
 
 .project-desc {
   flex: 50%; }
-
-#calculator-project-img {
-  background: url("../img/projects/before/calculator.png");
-  background-size: cover; }
 
 /*# sourceMappingURL=app.css.map */
