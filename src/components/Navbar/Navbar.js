@@ -3,7 +3,8 @@ import React from 'react'
 import crescent from '../../img/crescent.png'
 
 export default function Navbar({ showNavbar }) {
-    const navbarClasses = (showNavbar ? `navbar` : 'navbar hide' )
+    const navbarClasses = (showNavbar ? 'navbar' : 'navbar hide' )
+
     return (
         <nav>
             <div 

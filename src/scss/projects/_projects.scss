@@ -13,9 +13,11 @@
 
     transition-duration: $project-fade-duration;
 
+    /*
     &:hover {
         background: $hover-color;
     }
+    */
 }
 
 .project-img {
@@ -27,7 +29,7 @@
         transition: all $img-zoom-duration ease;
         
         width: 100%;
-        height: auto;
+        height: 100%;
 
         &:hover {
             transform: scale($img-zoom-scale);

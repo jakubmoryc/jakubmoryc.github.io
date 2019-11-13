@@ -8,7 +8,7 @@ import Projects from './components/Projects/Projects';
 class App extends React.Component {
   state = {
     scrollPos: undefined,
-    showNavbar: true
+    showNavbar: false
   }
 
   handleScroll = () => {
@@ -29,7 +29,8 @@ class App extends React.Component {
 
   componentDidMount() {
     this.setState({
-      scrollPos: window.pageYOffset
+      scrollPos: window.pageYOffset,
+      showNavbar: true
     })
     window.addEventListener('scroll', this.handleScroll)
   }
