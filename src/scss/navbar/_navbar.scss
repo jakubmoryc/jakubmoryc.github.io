@@ -31,12 +31,24 @@
 
       @include d-flex-row-center-center;
 
-      > img {
-        filter: invert(100%);
-
+      > button {
         height: 100%;
-        width: auto;
-        opacity: 0.8;
+        width: 30px;
+
+        @include button-reset;
+
+        > img {
+          filter: invert(100%);
+          height: 100%;
+          width: auto;
+          opacity: 0.8;
+
+          transition-duration: $switcher-hover-duration;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
 
@@ -55,7 +67,14 @@
         height: 100%;
         flex: 1;
 
+        @include button-reset;
         @include d-flex-row-center-center;
+
+        transition-duration: $navbar-item-hover-duration;
+
+        &:hover {
+          background: rgba(51, 51, 51, 0.8);
+        }
     }
   }
 }

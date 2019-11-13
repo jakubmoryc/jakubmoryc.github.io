@@ -13,18 +13,20 @@ export default function Navbar({ showNavbar }) {
                     <h1>JakubMoryc</h1>
                 </div>
                 <div className="navbar-theme-switcher">
-                    <img src={crescent} alt=""/>
+                    <button>
+                        <img src={crescent} alt=""/>
+                    </button>
                 </div>
                 <div className="navbar-links">
-                    <div className="navbar-links-item">
+                    <button className="navbar-links-item">
                         About
-                    </div>
-                    <div className="navbar-links-item">
+                    </button>
+                    <button className="navbar-links-item">
                         My Projects
-                    </div>
-                    <div className="navbar-links-item">
+                    </button>
+                    <button className="navbar-links-item">
                         Contact me
-                    </div>
+                    </button>
                 </div>
             </div>
         </nav>
