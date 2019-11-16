@@ -8,7 +8,14 @@ import Projects from './components/Projects/Projects';
 class App extends React.Component {
   state = {
     scrollPos: undefined,
-    showNavbar: false
+    showNavbar: false,
+    lightTheme: false
+  }
+
+  toggleTheme = () => {
+    this.setState({
+      lightTheme: !this.state.lightTheme
+    })
   }
 
   handleScroll = () => {
@@ -42,7 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar showNavbar={this.state.showNavbar}/>
+        <Navbar showNavbar={this.state.showNavbar} toggleTheme={this.toggleTheme}/>
         <main>
           <Jumbotron/>
           <Projects/>

@@ -1,4 +1,4 @@
-/* General colors */
+/* Theme Colors */
 /* Navbar */
 /* Projects */
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400,700&display=swap");
@@ -106,7 +106,7 @@ a {
     .jumbotron-section .jumbotron p {
       padding: 0;
       margin: 0; }
-    .jumbotron-section .jumbotron .jumbotron-small-text {
+    .jumbotron-section .jumbotron .jumbotron-bot {
       margin-top: 2rem;
       font-size: 1.5rem;
       text-align: right; }
@@ -133,7 +133,8 @@ a {
   .project-img > img {
     transition: all 0.25s ease;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    box-shadow: inset 0 0 10px #000000; }
     .project-img > img:hover {
       transform: scale(1.1);
       filter: brightness(50%); }

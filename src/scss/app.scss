@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400,700&display=swap');
 
 @import './mixins/mixins';
+@import './mixins/mediaQueries';
 
 * {
     box-sizing: border-box;
