@@ -4,18 +4,13 @@ import './css/app.css';
 import Navbar from './components/Navbar/Navbar';
 import Jumbotron from './components/Jumbotron/Jumbotron';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
   state = {
     scrollPos: undefined,
     showNavbar: false,
-    lightTheme: false
-  }
-
-  toggleTheme = () => {
-    this.setState({
-      lightTheme: !this.state.lightTheme
-    })
   }
 
   handleScroll = () => {
@@ -53,6 +48,8 @@ class App extends React.Component {
         <main>
           <Jumbotron/>
           <Projects/>
+          <Contact/>
+          <Footer/>
         </main>
       </div>
     );

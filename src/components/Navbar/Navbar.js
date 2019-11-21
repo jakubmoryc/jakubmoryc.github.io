@@ -2,7 +2,7 @@ import React from 'react'
 
 import crescent from '../../img/crescent.png'
 
-export default function Navbar({ showNavbar, toggleTheme }) {
+export default function Navbar({ showNavbar }) {
     const navbarClasses = (showNavbar ? 'navbar' : 'navbar hide' )
 
     return (
@@ -13,7 +13,7 @@ export default function Navbar({ showNavbar, toggleTheme }) {
                     <h1>JakubMoryc</h1>
                 </div>
                 <div className="navbar-theme-switcher">
-                    <button onClick={toggleTheme}>
+                    <button onClick={void(0)}>
                         <img src={crescent} alt=""/>
                     </button>
                 </div>

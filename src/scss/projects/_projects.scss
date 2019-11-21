@@ -3,6 +3,8 @@
 
     display: flex;
     flex-flow: column nowrap;
+
+    padding: 9rem 9rem;
 }
 
 .project {
@@ -12,12 +14,6 @@
     flex-flow: row nowrap;
 
     transition-duration: $project-fade-duration;
-
-    /*
-    &:hover {
-        background: $hover-color;
-    }
-    */
 }
 
 .project-img {
