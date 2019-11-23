@@ -10,12 +10,8 @@ export default function Navbar({ showNavbar }) {
             <div 
                 className={navbarClasses}>
                 <div className="navbar-logo">
+                    <img src={crescent} alt=""/>
                     <h1>JakubMoryc</h1>
-                </div>
-                <div className="navbar-theme-switcher">
-                    <button onClick={void(0)}>
-                        <img src={crescent} alt=""/>
-                    </button>
                 </div>
                 <div className="navbar-links">
                     <button className="navbar-links-item">

@@ -18,6 +18,9 @@
 * {
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   background-image: url("../img/bg/pw_maze_black.png");
@@ -52,34 +55,19 @@ a {
     font-family: 'Merriweather Sans', sans-serif; }
   .navbar .navbar-logo {
     width: 30%;
-    padding: 2rem 3rem; }
-  .navbar .navbar-theme-switcher {
-    height: 100%;
     padding: 2rem 3rem;
+    opacity: 0.8;
+    transition-duration: 0.25s;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center; }
-    .navbar .navbar-theme-switcher > button {
+    .navbar .navbar-logo:hover {
+      opacity: 1; }
+    .navbar .navbar-logo img {
+      filter: invert(100%);
       height: 100%;
-      width: 30px;
-      margin: 0;
-      padding: 0;
-      border: none;
-      outline: none;
-      background: none;
-      color: inherit;
-      font-family: inherit;
-      font-size: inherit;
-      cursor: pointer; }
-      .navbar .navbar-theme-switcher > button > img {
-        filter: invert(100%);
-        height: 100%;
-        width: auto;
-        opacity: 0.8;
-        transition-duration: 0.25s; }
-        .navbar .navbar-theme-switcher > button > img:hover {
-          opacity: 1; }
+      width: auto; }
   .navbar .navbar-links {
     width: 30%;
     height: 100%;
