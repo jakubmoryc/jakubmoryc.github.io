@@ -16,11 +16,40 @@ export default function Projects() {
                     />
                 </div>
                 <div className="project-desc">
+                    <div className="project-desc-title">
+                        <h1>Title</h1>
+                    </div>
+                    <div className="project-desc-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris maximus, placerat dui ac, facilisis nulla. Pellentesque consequat, erat sed rutrum suscipit, nisi lectus cursus sem,</p>
+                    </div>
+                    <div className="project-desc-tags">
+                        <div className="project-desc-tags-tag">
+                            <i class="fab fa-react"></i>
+                            React
+                        </div>
+                        <div className="project-desc-tags-tag">
+                            tag 2
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="project">
                 <div className="project-desc">
-                    2
+                    <div className="project-desc-title">
+                        <h1>Title</h1>
+                    </div>
+                    <div className="project-desc-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris maximus, placerat dui ac, facilisis nulla. Pellentesque consequat, erat sed rutrum suscipit, nisi lectus cursus sem,</p>
+                    </div>
+                    <div className="project-desc-tags">
+                        <div className="project-desc-tags-tag">
+                            <i class="fab fa-react"></i>
+                            React
+                        </div>
+                        <div className="project-desc-tags-tag">
+                            tag 2
+                        </div>
+                    </div>
                 </div>
                 <div className="project-img">
                     <img
@@ -37,11 +66,40 @@ export default function Projects() {
                     />
                 </div>
                 <div className="project-desc">
+                    <div className="project-desc-title">
+                        <h1>Title</h1>
+                    </div>
+                    <div className="project-desc-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris maximus, placerat dui ac, facilisis nulla. Pellentesque consequat, erat sed rutrum suscipit, nisi lectus cursus sem,</p>
+                    </div>
+                    <div className="project-desc-tags">
+                        <div className="project-desc-tags-tag">
+                            <i class="fab fa-react"></i>
+                            React
+                        </div>
+                        <div className="project-desc-tags-tag">
+                            tag 2
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="project">
                 <div className="project-desc">
-                    2
+                    <div className="project-desc-title">
+                        <h1>Title</h1>
+                    </div>
+                    <div className="project-desc-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mauris maximus, placerat dui ac, facilisis nulla. Pellentesque consequat, erat sed rutrum suscipit, nisi lectus cursus sem,</p>
+                    </div>
+                    <div className="project-desc-tags">
+                        <div className="project-desc-tags-tag">
+                            <i class="fab fa-react"></i>
+                            React
+                        </div>
+                        <div className="project-desc-tags-tag">
+                            tag 2
+                        </div>
+                    </div>
                 </div>
                 <div className="project-img">
                     <img

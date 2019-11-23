@@ -1,0 +1,28 @@
+footer {
+    background: $contact-bg;
+
+    height: 9rem;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+
+    .footer-text {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin: 0;
+            letter-spacing: 2px;
+            opacity: 0.8;
+
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: $tag-icon-size;
+            }
+        }
+    }
+}

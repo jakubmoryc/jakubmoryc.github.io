@@ -5,36 +5,78 @@
     flex-flow: column nowrap;
 
     padding: 9rem 9rem;
-}
 
-.project {
-    width: 100%;
-
-    display: flex;
-    flex-flow: row nowrap;
-
-    transition-duration: $project-fade-duration;
-}
-
-.project-img {
-    flex: 50%;
-
-    overflow: hidden;
-
-    > img {
-        transition: all $img-zoom-duration ease;
-        
+    .project {
         width: 100%;
-        height: 100%;
-        box-shadow: inset 0 0 10px #000000;
+    
+        display: flex;
+        flex-flow: row nowrap;
+    
+        transition-duration: $project-fade-duration;
 
-        &:hover {
-            transform: scale($img-zoom-scale);
-            filter: brightness(50%);
+        .project-img {
+            flex: 50%;
+        
+            overflow: hidden;
+        
+            > img {
+                transition: all $img-zoom-duration ease;
+                
+                width: 100%;
+                height: 100%;
+                box-shadow: inset 0 0 10px #000000;
+        
+                &:hover {
+                    transform: scale($img-zoom-scale);
+                    filter: brightness(50%);
+                }
+            }
+        }
+
+        .project-desc {
+            flex: 50%;
+
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;            
+
+            .project-desc-title {
+                font-size: 2rem;
+                h1 {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .project-desc-body {
+                padding: 2rem;
+            }
+
+            .project-desc-tags {
+                width: 50%;
+
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+
+
+                .project-desc-tags-tag {
+                    @include d-flex-row-center-center;
+
+                    border: 2px solid white;
+                    border-radius: 30px;
+
+                    padding: 0.5rem;
+                    margin-right: 0.5rem;
+                    margin-bottom: 0.5rem;
+
+                    i {
+                        margin-right: 0.5rem;
+                        font-size: $tag-icon-size;
+                    }
+                }
+            }
         }
     }
-}
-
-.project-desc {
-    flex: 50%;
 }
