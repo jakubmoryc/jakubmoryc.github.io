@@ -14,15 +14,15 @@ export default function Navbar({ showNavbar }) {
                     <h1>JakubMoryc</h1>
                 </div>
                 <div className="navbar-links">
-                    <button className="navbar-links-item">
+                    <a className="navbar-links-item" href="#jumbotron-section">
                         About me
-                    </button>
-                    <button className="navbar-links-item">
+                    </a>
+                    <a className="navbar-links-item" href="#projects-section">
                         My Projects
-                    </button>
-                    <button className="navbar-links-item">
+                    </a>
+                    <a className="navbar-links-item" href="#contact-section">
                         Contact me
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>

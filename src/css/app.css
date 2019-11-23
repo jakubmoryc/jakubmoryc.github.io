@@ -92,7 +92,8 @@ a {
       flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
-      transition-duration: 0.25s; }
+      transition-duration: 0.25s;
+      text-decoration: none; }
       .navbar .navbar-links .navbar-links-item:hover {
         background: rgba(51, 51, 51, 0.8); }
 
@@ -206,6 +207,8 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end; }
+  footer a {
+    text-decoration: none; }
   footer .footer-text {
     display: flex;
     justify-content: space-between; }
@@ -216,6 +219,7 @@ footer {
       display: flex;
       align-items: center; }
       footer .footer-text p i {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        margin-right: 0.25rem; }
 
 /*# sourceMappingURL=app.css.map */

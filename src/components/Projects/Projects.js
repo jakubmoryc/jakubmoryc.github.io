@@ -7,7 +7,7 @@ import pokelangapi from '../../img/projects/before/pokelang-api.png'
 
 export default function Projects() {
     return (
-        <section className="projects-section">
+        <section className="projects-section" id="projects-section">
             <div className="project">
                 <div className="project-img">
                     <img

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Jumbotron() {
     return (
-        <section className="jumbotron-section">
+        <section className="jumbotron-section" id="jumbotron-section">
             <div className="jumbotron">
                 <p className="jumbotron-top">
                     Hi.<br/>
@@ -13,7 +13,7 @@ export default function Jumbotron() {
                 </p>
                 <p className="jumbotron-bot">
                     Below you'll find few of my projects.<br/>
-                    I invite you to look at them and <a href="#">get in touch with me</a>.<br/>
+                    I invite you to look at them and <a href="#contact-section">get in touch with me</a>.<br/>
                     My main framework is React.js and I am currently learning Express.js.
                 </p>
             </div>

@@ -9,6 +9,10 @@ footer {
     flex-flow: column nowrap;
     justify-content: flex-end;
 
+    a {
+        text-decoration: none;
+    }
+
     .footer-text {
         display: flex;
         justify-content: space-between;
@@ -22,6 +26,7 @@ footer {
 
             i {
                 font-size: $tag-icon-size;
+                margin-right: 0.25rem;
             }
         }
     }
