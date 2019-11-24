@@ -1,6 +1,7 @@
 /* Theme Colors */
 /* Navbar */
 /* Projects */
+/* Contact */
 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400,700&display=swap");
 /*
 @include for-desktop {
@@ -178,15 +179,15 @@ a {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
       .projects-section .project .project-desc .project-desc-title {
         font-size: 2rem; }
         .projects-section .project .project-desc .project-desc-title h1 {
           padding: 0;
           margin: 0; }
       .projects-section .project .project-desc .project-desc-body {
-        padding: 2rem;
-        text-align: center; }
+        padding: 2rem; }
       .projects-section .project .project-desc .project-desc-tags {
         width: 50%;
         display: flex;
@@ -235,9 +236,13 @@ a {
       padding: 1.25rem;
       margin-right: 0.5rem;
       background: rgba(51, 51, 51, 0.8);
-      border-radius: 70%; }
+      border-radius: 70%;
+      transition-duration: 0.25s;
+      cursor: pointer; }
       .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon i {
         font-size: 2rem; }
+      .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon:hover {
+        background: rgba(89, 89, 89, 0.8); }
 
 footer {
   background: rgba(0, 0, 0, 0.8);

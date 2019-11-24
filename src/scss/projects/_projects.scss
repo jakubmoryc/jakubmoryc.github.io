@@ -87,7 +87,9 @@
             display: flex;
             flex-flow: column nowrap;
             justify-content: center;
-            align-items: center;            
+            align-items: center;    
+            
+            text-align: center;
 
             .project-desc-title {
                 font-size: 2rem;
@@ -99,7 +101,6 @@
 
             .project-desc-body {
                 padding: 2rem;
-                text-align: center;
             }
 
             .project-desc-tags {
