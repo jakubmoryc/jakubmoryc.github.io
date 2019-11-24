@@ -5,7 +5,7 @@ export default function Footer() {
         <footer>
             <div className="footer-text">
                 <p>
-                    2019 © Jakub Moryc
+                    © 2019 Jakub Moryc
                 </p>
                 <a href="https://github.com/jakubmoryc/jakubmoryc.github.io" target="_blank" rel="noopener noreferrer">
                     <p>
