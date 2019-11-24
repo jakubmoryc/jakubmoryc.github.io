@@ -36,13 +36,15 @@ export default function Projects() {
                                 onMouseLeave={(e) => {handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
+                                Launch the site
                             </button>
                             <button 
                                 onClick={() => {handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {handleMouseLeave(e)}}
                             >
-                                <i class="fab fa-github"></i>
+                                <i class="fas fa-code"></i>
+                                See code on GitHub
                             </button>
                         </div>
                     </div>
@@ -131,13 +133,15 @@ export default function Projects() {
                                 onMouseLeave={(e) => {handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
+                                Open the site
                             </button>
                             <button 
                                 onClick={() => {handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {handleMouseLeave(e)}}
                             >
-                                <i class="fab fa-github"></i>
+                                <i class="fas fa-code"></i>
+                                See code on GitHub
                             </button>
                         </div>
                     </div>

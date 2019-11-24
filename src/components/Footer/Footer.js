@@ -7,6 +7,11 @@ export default function Footer() {
                 <p>
                     2019 © Jakub Moryc
                 </p>
+                <a href="https://github.com/jakubmoryc/jakubmoryc.github.io" target="_blank" rel="noopener noreferrer">
+                    <p>
+                        <i class="fab fa-github"></i>See this page on GitHub
+                    </p>
+                </a>
                 <a href="https://github.com/jakubmoryc" target="_blank" rel="noopener noreferrer">
                     <p>
                         <i class="fab fa-github"></i>my GitHub

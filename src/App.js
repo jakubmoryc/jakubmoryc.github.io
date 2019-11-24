@@ -28,13 +28,18 @@ class App extends React.Component {
       scrollPos: currentScrollPos
     })
   }
+  handleLoad = () => {
+    document.querySelector('.App').classList.remove('blur');
+  }
 
   componentDidMount() {
     this.setState({
       scrollPos: window.pageYOffset,
       showNavbar: true
     })
+
     window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('load', this.handleLoad)
   }
   
   componentWillUnmount() {

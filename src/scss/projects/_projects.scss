@@ -58,24 +58,39 @@
                     @include d-flex-row-center-center;
 
                     pointer-events : none;
+                    flex: 50% 1;
 
                     button {
-                        display: inline-block;
+                        @include d-flex-row-center-center;
 
-                        pointer-events : auto;
+                        background: none;
 
-                        padding: 1.25rem;
+                        pointer-events: auto;
+
+                        border: 2px solid white;
+                        border-radius: 30px;
+
+                        color: white;
+
+                        padding: 0.5rem;
                         margin-right: 0.5rem;
+                        margin-bottom: 0.5rem;
 
-                        background: white;
-                        border: none;
-                        border-radius: 70%;
+                        transition-duration: $tag-hover-duration;
+
+                        font-size: 1.5rem;
+                        font-weight: bold;
+
+                        &:hover {
+                            background: white;
+                            color: black;
+                        }
 
                         cursor: pointer;
 
                         i {
-                            font-size: 2rem;
-                            color: black;
+                            margin-right: 0.5rem;
+                            font-size: $project-icon-size;
                         }
                     }
                 }

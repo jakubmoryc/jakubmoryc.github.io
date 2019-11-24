@@ -36,10 +36,13 @@ a {
     }
 }
 
-
-
 #root {
     margin-top: 100px;
+}
+
+.blur {
+    filter: blur(1.5rem);
+    transition-duration: 500ms;
 }
 
 @import './navbar/navbar';
