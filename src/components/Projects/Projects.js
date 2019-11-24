@@ -14,6 +14,14 @@ export default function Projects() {
                         src={calculator}
                         alt=""
                     />
+                    <div className="project-img-buttons-wrapper">
+                        <div className="project-img-buttons">
+                            <button onClick={(e) => {alert("lol")}}>
+                                <i class="fas fa-globe"></i>
+                            </button>
+                            <button><i class="fab fa-github"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <div className="project-desc">
                     <div className="project-desc-title">

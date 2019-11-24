@@ -18,6 +18,8 @@
             flex: 50%;
         
             overflow: hidden;
+
+            position: relative;
         
             > img {
                 transition: all $img-zoom-duration ease;
@@ -29,6 +31,45 @@
                 &:hover {
                     transform: scale($img-zoom-scale);
                     filter: brightness(50%);
+                }
+            }
+
+            .project-img-buttons-wrapper {
+                position: absolute;
+                left: 0%;
+                bottom: 0%;
+
+                padding-top: 10%;
+
+                width: 100%;
+                height: 100%;
+
+                pointer-events : none;
+
+                @include d-flex-row-center-center;
+
+                .project-img-buttons {
+                    @include d-flex-row-center-center;
+
+                    pointer-events : none;
+
+                    button {
+                        display: inline-block;
+
+                        pointer-events : auto;
+
+                        padding: 1.25rem;
+                        margin-right: 0.5rem;
+
+                        background: white;
+                        border: none;
+                        border-radius: 70%;
+
+                        i {
+                            font-size: 2rem;
+                            color: black;
+                        }
+                    }
                 }
             }
         }
@@ -70,6 +111,13 @@
                     padding: 0.5rem;
                     margin-right: 0.5rem;
                     margin-bottom: 0.5rem;
+
+                    transition-duration: $tag-hover-duration;
+
+                    &:hover {
+                        background: white;
+                        color: black;
+                    }
 
                     i {
                         margin-right: 0.5rem;

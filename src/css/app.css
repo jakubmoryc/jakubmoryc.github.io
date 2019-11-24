@@ -130,7 +130,8 @@ a {
     transition-duration: 0.15s; }
     .projects-section .project .project-img {
       flex: 50%;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       .projects-section .project .project-img > img {
         transition: all 0.25s ease;
         width: 100%;
@@ -139,6 +140,35 @@ a {
         .projects-section .project .project-img > img:hover {
           transform: scale(1.1);
           filter: brightness(50%); }
+      .projects-section .project .project-img .project-img-buttons-wrapper {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        padding-top: 10%;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center; }
+        .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: center;
+          pointer-events: none; }
+          .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button {
+            display: inline-block;
+            pointer-events: auto;
+            padding: 1.25rem;
+            margin-right: 0.5rem;
+            background: white;
+            border: none;
+            border-radius: 70%; }
+            .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button i {
+              font-size: 2rem;
+              color: black; }
     .projects-section .project .project-desc {
       flex: 50%;
       display: flex;
@@ -166,7 +196,11 @@ a {
           border-radius: 30px;
           padding: 0.5rem;
           margin-right: 0.5rem;
-          margin-bottom: 0.5rem; }
+          margin-bottom: 0.5rem;
+          transition-duration: 0.25s; }
+          .projects-section .project .project-desc .project-desc-tags .project-desc-tags-tag:hover {
+            background: white;
+            color: black; }
           .projects-section .project .project-desc .project-desc-tags .project-desc-tags-tag i {
             margin-right: 0.5rem;
             font-size: 1.5rem; }
