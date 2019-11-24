@@ -32,6 +32,11 @@
                     transform: scale($img-zoom-scale);
                     filter: brightness(50%);
                 }
+
+                &.hover {
+                    transform: scale($img-zoom-scale);
+                    filter: brightness(50%);
+                }
             }
 
             .project-img-buttons-wrapper {
@@ -65,6 +70,8 @@
                         border: none;
                         border-radius: 70%;
 
+                        cursor: pointer;
+
                         i {
                             font-size: 2rem;
                             color: black;
@@ -92,6 +99,7 @@
 
             .project-desc-body {
                 padding: 2rem;
+                text-align: center;
             }
 
             .project-desc-tags {

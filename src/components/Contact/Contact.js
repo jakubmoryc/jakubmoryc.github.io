@@ -10,19 +10,19 @@ export default function Contact() {
                     <div className="contact-section-contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    - moryckuba@gmail.com
+                    - <a href="mailto:moryckuba@gmail.com">moryckuba@gmail.com</a>
                 </div>
                 <div className="contact-section-contact">
                     <div className="contact-section-contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    - 511 625 146
+                    - <a href="tel:511-625-146">511 625 146</a>
                 </div>
                 <div className="contact-section-contact">
                     <div className="contact-section-contact-icon">
                         <i class="fab fa-linkedin"></i>
                     </div>
-                    - Jakub Moryc
+                    - <a href="https://www.linkedin.com/in/jakub-moryc-9446b2198/" target="_blank" rel="noopener noreferrer">Jakub Moryc</a>
                 </div>
             </div>
         </section>
