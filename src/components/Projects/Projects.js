@@ -67,7 +67,7 @@ export default class Projects extends React.Component {
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://jakubmoryc.github.io/calculator/')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -76,7 +76,7 @@ export default class Projects extends React.Component {
                                 Launch the site
                             </button>
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://github.com/jakubmoryc/calculator')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -169,7 +169,7 @@ export default class Projects extends React.Component {
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://jakubmoryc.github.io/pokedex-languages/')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -178,7 +178,7 @@ export default class Projects extends React.Component {
                                 Launch the site
                             </button>
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://github.com/jakubmoryc/pokedex-languages')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -202,7 +202,7 @@ export default class Projects extends React.Component {
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://pokedex-languages-api.herokuapp.com/')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -211,7 +211,7 @@ export default class Projects extends React.Component {
                                 Launch the endpoint
                             </button>
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://github.com/jakubmoryc/pokedex-languages-api')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -305,7 +305,7 @@ export default class Projects extends React.Component {
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://jakubmoryc.github.io/pokedex-languages-api-docs/#/')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
@@ -314,7 +314,7 @@ export default class Projects extends React.Component {
                                 Launch the site
                             </button>
                             <button 
-                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onClick={() => {this.handleClick('https://github.com/jakubmoryc/pokedex-languages-api-docs')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                                 className={this.props.screenWidth <= 1200 ? "display" : ""}
