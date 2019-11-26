@@ -11,6 +11,11 @@ class App extends React.Component {
   state = {
     scrollPos: undefined,
     showNavbar: false,
+    screenWidth: undefined
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ screenWidth: window.innerWidth})
   }
 
   handleScroll = () => {
@@ -29,21 +34,24 @@ class App extends React.Component {
     })
   }
   handleLoad = () => {
-    document.querySelector('.App').classList.remove('blur');
+    document.querySelector('.App').classList.remove('blur')
   }
 
   componentDidMount() {
     this.setState({
       scrollPos: window.pageYOffset,
-      showNavbar: true
+      showNavbar: true,
+      screenWidth: window.innerWidth
     })
 
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('load', this.handleLoad)
+    window.addEventListener('resize', this.updateWindowDimensions)
   }
   
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
+    window.removeEventListener('resize', this.updateWindowDimensions)
   }
   
   render() {
@@ -52,7 +60,7 @@ class App extends React.Component {
         <Navbar showNavbar={this.state.showNavbar} toggleTheme={this.toggleTheme}/>
         <main>
           <Jumbotron/>
-          <Projects/>
+          <Projects screenWidth={this.state.screenWidth}/>
           <Contact/>
           <Footer/>
         </main>

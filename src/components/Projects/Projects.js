@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import calculator from '../../img/projects/before/calculator.png'
 import pokedexapp from '../../img/projects/before/pokedexapp.png'
 import nodejs from '../../img/projects/before/nodejs.png'
 import pokelangapi from '../../img/projects/before/pokelang-api.png'
 
-export default function Projects() {
+export default function Projects(props) {
+
+    const [displayImgButtons, setDisplayImgButtons] = useState(false)
+
+    useEffect(() => {
+        if(props.screenWidth <= 1200) {
+            setDisplayImgButtons(true)
+        }
+    }, [props.screenWidth])
 
     const handleClick = (url) => {
         window.open(url, '_blank')
@@ -30,6 +38,7 @@ export default function Projects() {
     return (
         <section className="projects-section" id="projects-section">
             <div className="project">
+                {displayImgButtons.toString()}
                 <div className="project-img">
                     <img
                         src={calculator}
@@ -37,6 +46,7 @@ export default function Projects() {
                         id="lol1"
                         onMouseEnter={(e) => {handleImgMouseEnter(e)}}
                         onMouseLeave={(e) => {handleImgMouseLeave(e)}}
+                        className={displayImgButtons ? "hover" : ""}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
