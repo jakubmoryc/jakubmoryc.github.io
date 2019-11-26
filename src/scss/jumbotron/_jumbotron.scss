@@ -3,11 +3,23 @@
 
     @include d-flex-row-center-center;
 
+    @include for-tablet-portrait-below {
+        padding: 3rem;
+    }
+
+    @include for-phone-only {
+        padding: 1rem;
+    }
+
     .jumbotron {
         width: fit-content;
 
         font-size: 3.5rem;
         font-weight: 300;
+
+        @include for-tablet-portrait-below {
+            font-size: 6.5vw;
+        }
 
         p {
             padding: 0;
@@ -19,6 +31,10 @@
             font-size: 1.5rem;
 
             text-align: right;
+
+            @include for-tablet-portrait-below {
+                font-size: 4vw;
+            }
         }
     }
 }

@@ -5,6 +5,8 @@ import pokedexapp from '../../img/projects/before/pokedexapp.png'
 import nodejs from '../../img/projects/before/nodejs.png'
 import pokelangapi from '../../img/projects/before/pokelang-api.png'
 
+// TODO: make <Project> or <ProjectImg> Component
+
 export default class Projects extends React.Component {
 
     handleClick = (url) => {
@@ -15,6 +17,9 @@ export default class Projects extends React.Component {
         if(this.props.screenWidth <= 1200) {
             return
         }
+        e.target.closest(".project-img").querySelectorAll('button').forEach((element) => {
+            element.classList.add('display')
+        })
         e.target.closest(".project-img").querySelector('img').classList.add('hover') // Add a nearest img's element "hover" class
     }
 
@@ -22,6 +27,9 @@ export default class Projects extends React.Component {
         if(this.props.screenWidth <= 1200) {
             return
         }
+        e.target.closest(".project-img").querySelectorAll('button').forEach((element) => {
+            element.classList.remove('display')
+        })
         e.target.closest(".project-img").querySelector('img').classList.remove('hover') // Remove a nearest's img element "hover" class
     }
 
@@ -29,6 +37,9 @@ export default class Projects extends React.Component {
         if(this.props.screenWidth <= 1200) {
             return
         }
+        e.target.closest(".project-img").querySelectorAll('button').forEach((element) => {
+            element.classList.add('display')
+        })
         e.target.classList.add('hover')
     }
 
@@ -36,6 +47,9 @@ export default class Projects extends React.Component {
         if(this.props.screenWidth <= 1200) {
             return
         }
+        e.target.closest(".project-img").querySelectorAll('button').forEach((element) => {
+            element.classList.remove('display')
+        })
         e.target.classList.remove('hover')
     }
     render() {
@@ -46,7 +60,6 @@ export default class Projects extends React.Component {
                     <img
                         src={calculator}
                         alt=""
-                        id="lol1"
                         onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
                         onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
                         className={this.props.screenWidth <= 1200 ? "hover" : ""}
@@ -57,6 +70,7 @@ export default class Projects extends React.Component {
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-globe"></i>
                                 Launch the site
@@ -65,6 +79,7 @@ export default class Projects extends React.Component {
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-code"></i>
                                 See code on GitHub
@@ -149,6 +164,7 @@ export default class Projects extends React.Component {
                         alt=""
                         onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
                         onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
+                        className={this.props.screenWidth <= 1200 ? "hover" : ""}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -156,14 +172,16 @@ export default class Projects extends React.Component {
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-globe"></i>
-                                Open the site
+                                Launch the site
                             </button>
                             <button 
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-code"></i>
                                 See code on GitHub
@@ -179,6 +197,7 @@ export default class Projects extends React.Component {
                         alt=""
                         onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
                         onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
+                        className={this.props.screenWidth <= 1200 ? "hover" : ""}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -186,15 +205,19 @@ export default class Projects extends React.Component {
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-globe"></i>
+                                Launch the endpoint
                             </button>
                             <button 
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fab fa-github"></i>
+                                See code on GitHub
                             </button>
                         </div>
                     </div>
@@ -277,6 +300,7 @@ export default class Projects extends React.Component {
                         alt=""
                         onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
                         onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
+                        className={this.props.screenWidth <= 1200 ? "hover" : ""}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -284,15 +308,19 @@ export default class Projects extends React.Component {
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fas fa-globe"></i>
+                                Launch the site
                             </button>
                             <button 
                                 onClick={() => {this.handleClick('https://www.google.com')}}
                                 onMouseEnter={(e) => {this.handleMouseEnter(e)}}
                                 onMouseLeave={(e) => {this.handleMouseLeave(e)}}
+                                className={this.props.screenWidth <= 1200 ? "display" : ""}
                             >
                                 <i class="fab fa-github"></i>
+                                See code on GitHub
                             </button>
                         </div>
                     </div>

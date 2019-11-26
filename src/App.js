@@ -57,7 +57,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar showNavbar={this.state.showNavbar} toggleTheme={this.toggleTheme}/>
+        <Navbar 
+          showNavbar={this.state.showNavbar} 
+          screenWidth={this.state.screenWidth}/>
         <main>
           <Jumbotron/>
           <Projects screenWidth={this.state.screenWidth}/>

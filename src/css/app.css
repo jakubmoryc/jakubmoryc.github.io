@@ -53,34 +53,56 @@ a {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  padding: 0 3rem;
   z-index: 1; }
+  @media (max-width: 599px) {
+    .navbar {
+      padding: 0 1rem; } }
   .navbar h1 {
     font-size: 2rem;
     margin: 0;
     font-family: 'Merriweather Sans', sans-serif; }
   .navbar .navbar-logo {
     width: 30%;
-    padding: 2rem 3rem;
     opacity: 0.8;
     transition-duration: 0.25s;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 767px) {
+      .navbar .navbar-logo {
+        width: fit-content; } }
     .navbar .navbar-logo:hover {
       opacity: 1; }
     .navbar .navbar-logo img {
       filter: invert(100%);
-      height: 100%;
-      width: auto; }
+      height: 36px;
+      width: 36px; }
+      @media (max-width: 451px) {
+        .navbar .navbar-logo img {
+          height: 18px;
+          width: 18px; } }
   .navbar .navbar-links {
-    width: 30%;
+    width: 40%;
     height: 100%;
-    padding: 0 3rem;
+    padding-left: 3rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center; }
+    @media (max-width: 1200px) {
+      .navbar .navbar-links {
+        width: 70%; } }
+    @media (max-width: 767px) {
+      .navbar .navbar-links {
+        flex: 1; } }
+    @media (max-width: 599px) {
+      .navbar .navbar-links {
+        padding-left: 1rem; } }
+    @media (max-width: 451px) {
+      .navbar .navbar-links {
+        padding: 0; } }
     .navbar .navbar-links .navbar-links-item {
       height: 100%;
       flex: 1;
@@ -111,10 +133,19 @@ a {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 899px) {
+    .jumbotron-section {
+      padding: 3rem; } }
+  @media (max-width: 599px) {
+    .jumbotron-section {
+      padding: 1rem; } }
   .jumbotron-section .jumbotron {
     width: fit-content;
     font-size: 3.5rem;
     font-weight: 300; }
+    @media (max-width: 899px) {
+      .jumbotron-section .jumbotron {
+        font-size: 6.5vw; } }
     .jumbotron-section .jumbotron p {
       padding: 0;
       margin: 0; }
@@ -122,21 +153,48 @@ a {
       margin-top: 2rem;
       font-size: 1.5rem;
       text-align: right; }
+      @media (max-width: 899px) {
+        .jumbotron-section .jumbotron .jumbotron-bot {
+          font-size: 4vw; } }
 
 .projects-section {
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
-  padding: 9rem 9rem; }
+  padding: 9rem; }
+  @media (max-width: 1500px) {
+    .projects-section {
+      padding: 6rem; } }
+  @media (max-width: 1200px) {
+    .projects-section {
+      padding: 0rem; } }
+  @media (min-width: 600px) and (max-width: 899px) {
+    .projects-section {
+      padding: 3rem; } }
   .projects-section .project {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     transition-duration: 0.15s; }
+    @media (max-width: 1200px) {
+      .projects-section .project {
+        margin-bottom: 6rem; } }
+    @media (max-width: 899px) {
+      .projects-section .project {
+        flex-flow: column nowrap; } }
+    @media (max-width: 1200px) {
+      .projects-section .project {
+        box-shadow: inset 0 0 10px #000000; } }
     .projects-section .project .project-img {
       flex: 50%;
       overflow: hidden;
       position: relative; }
+      @media (max-width: 899px) {
+        .projects-section .project .project-img {
+          order: 1; } }
+      @media (max-width: 599px) {
+        .projects-section .project .project-img {
+          padding: 0; } }
       .projects-section .project .project-img > img {
         transition: all 0.25s ease;
         width: 100%;
@@ -157,7 +215,7 @@ a {
         justify-content: center;
         align-items: center;
         align-items: flex-end;
-        padding-bottom: 5rem; }
+        padding-bottom: 5vh; }
         .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons {
           display: flex;
           flex-flow: row nowrap;
@@ -173,7 +231,7 @@ a {
             background: none;
             pointer-events: auto;
             border: 2px solid white;
-            border-radius: 30px;
+            border-radius: 10px;
             color: white;
             padding: 0.5rem;
             margin-right: 0.5rem;
@@ -181,20 +239,41 @@ a {
             transition-duration: 0.25s;
             font-size: 1.5rem;
             font-weight: bold;
+            display: none;
             cursor: pointer; }
+            @media (max-width: 1500px) {
+              .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button {
+                font-size: 1rem; } }
+            @media (max-width: 899px) {
+              .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button {
+                margin-bottom: 2rem; } }
             .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button:hover {
               background: white;
               color: black; }
+            .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button.display {
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+              @media (max-width: 451px) {
+                .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button.display {
+                  flex-flow: column wrap; } }
             .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button i {
               margin-right: 0.5rem;
               font-size: 2.5rem; }
+              @media (max-width: 1500px) {
+                .projects-section .project .project-img .project-img-buttons-wrapper .project-img-buttons button i {
+                  font-size: 1.5rem; } }
     .projects-section .project .project-desc {
       flex: 50%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      text-align: center; }
+      text-align: center;
+      padding: 3rem 0; }
+      @media (max-width: 899px) {
+        .projects-section .project .project-desc {
+          order: 2; } }
       .projects-section .project .project-desc .project-desc-title {
         font-size: 2rem; }
         .projects-section .project .project-desc .project-desc-title h1 {
@@ -202,11 +281,23 @@ a {
           margin: 0; }
       .projects-section .project .project-desc .project-desc-body {
         padding: 2rem; }
+        @media (max-width: 451px) {
+          .projects-section .project .project-desc .project-desc-body {
+            padding: 1rem; } }
       .projects-section .project .project-desc .project-desc-tags {
         width: 50%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center; }
+        @media (max-width: 1500px) {
+          .projects-section .project .project-desc .project-desc-tags {
+            width: 80%; } }
+        @media (max-width: 599px) {
+          .projects-section .project .project-desc .project-desc-tags {
+            width: 60%; } }
+        @media (max-width: 451px) {
+          .projects-section .project .project-desc .project-desc-tags {
+            width: 80%; } }
         .projects-section .project .project-desc .project-desc-tags .project-desc-tags-tag {
           display: flex;
           flex-flow: row nowrap;
@@ -233,6 +324,9 @@ a {
   justify-content: center;
   align-items: center;
   padding: 9rem 9rem 0 9rem; }
+  @media (max-width: 599px) {
+    .contact-section {
+      padding: 3rem 3rem 0 3rem; } }
   .contact-section h1 {
     font-size: 5rem;
     font-weight: 300;
@@ -253,8 +347,14 @@ a {
       border-radius: 70%;
       transition-duration: 0.25s;
       cursor: pointer; }
+      @media (max-width: 599px) {
+        .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon {
+          padding: 1.25rem; } }
       .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon i {
         font-size: 2rem; }
+        @media (max-width: 599px) {
+          .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon i {
+            font-size: 1.25rem; } }
       .contact-section .contact-section-contacts .contact-section-contact .contact-section-contact-icon:hover {
         background: rgba(89, 89, 89, 0.8); }
 
@@ -270,12 +370,19 @@ footer {
   footer .footer-text {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 599px) {
+      footer .footer-text {
+        flex-flow: column nowrap; } }
     footer .footer-text p {
       margin: 0;
       letter-spacing: 2px;
       opacity: 0.8;
       display: flex;
       align-items: center; }
+      @media (max-width: 599px) {
+        footer .footer-text p {
+          justify-content: center;
+          margin-bottom: 0.5rem; } }
       footer .footer-text p i {
         font-size: 1.5rem;
         margin-right: 0.25rem; }

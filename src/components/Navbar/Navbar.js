@@ -2,7 +2,7 @@ import React from 'react'
 
 import crescent from '../../img/crescent.png'
 
-export default function Navbar({ showNavbar }) {
+export default function Navbar({ showNavbar, screenWidth }) {
     const navbarClasses = (showNavbar ? 'navbar' : 'navbar hide' )
 
     return (
@@ -11,7 +11,7 @@ export default function Navbar({ showNavbar }) {
                 className={navbarClasses}>
                 <div className="navbar-logo">
                     <img src={crescent} alt=""/>
-                    <h1>JakubMoryc</h1>
+                    {screenWidth >= 768 ? <h1>JakubMoryc</h1> : null}
                 </div>
                 <div className="navbar-links">
                     <a className="navbar-links-item" href="#jumbotron-section">

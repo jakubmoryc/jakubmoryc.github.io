@@ -16,6 +16,11 @@ footer {
     .footer-text {
         display: flex;
         justify-content: space-between;
+
+        @include for-phone-only {
+            flex-flow: column nowrap;
+        }
+
         p {
             margin: 0;
             letter-spacing: 2px;
@@ -23,6 +28,11 @@ footer {
 
             display: flex;
             align-items: center;
+
+            @include for-phone-only {
+                justify-content: center;
+                margin-bottom: 0.5rem;
+            }
 
             i {
                 font-size: $tag-icon-size;

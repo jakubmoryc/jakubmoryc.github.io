@@ -10,6 +10,10 @@
 
     padding: 9rem 9rem 0 9rem;
 
+    @include for-phone-only {
+        padding: 3rem 3rem 0 3rem;
+    }
+
     h1 {
         font-size: 5rem;
         font-weight: 300;
@@ -44,8 +48,15 @@
 
                 cursor: pointer;
 
+                @include for-phone-only {
+                    padding: 1.25rem;
+                }
+
                 i {
                     font-size: 2rem;
+                    @include for-phone-only {
+                        font-size: 1.25rem;
+                    }
                 }
 
                 &:hover {
