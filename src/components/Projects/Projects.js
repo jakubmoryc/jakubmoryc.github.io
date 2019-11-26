@@ -19,6 +19,14 @@ export default function Projects() {
         e.target.closest(".project-img").querySelector('img').classList.remove('hover') // Remove a nearest's img element "hover" class
     }
 
+    const handleImgMouseEnter = (e) => {
+        e.target.classList.add('hover')
+    }
+
+    const handleImgMouseLeave = (e) => {
+        e.target.classList.remove('hover')
+    }
+
     return (
         <section className="projects-section" id="projects-section">
             <div className="project">
@@ -27,6 +35,8 @@ export default function Projects() {
                         src={calculator}
                         alt=""
                         id="lol1"
+                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -124,6 +134,8 @@ export default function Projects() {
                     <img
                         src={pokedexapp}
                         alt=""
+                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -152,6 +164,8 @@ export default function Projects() {
                     <img
                         src={nodejs}
                         alt=""
+                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
@@ -248,6 +262,8 @@ export default function Projects() {
                     <img
                         src={pokelangapi}
                         alt=""
+                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">

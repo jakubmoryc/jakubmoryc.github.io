@@ -27,11 +27,6 @@
                 width: 100%;
                 height: 100%;
                 box-shadow: inset 0 0 10px #000000;
-        
-                &:hover {
-                    transform: scale($img-zoom-scale);
-                    filter: brightness(50%);
-                }
 
                 &.hover {
                     transform: scale($img-zoom-scale);
