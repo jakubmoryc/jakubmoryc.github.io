@@ -1,67 +1,70 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 import calculator from '../../img/projects/before/calculator.png'
 import pokedexapp from '../../img/projects/before/pokedexapp.png'
 import nodejs from '../../img/projects/before/nodejs.png'
 import pokelangapi from '../../img/projects/before/pokelang-api.png'
 
-export default function Projects(props) {
+export default class Projects extends React.Component {
 
-    const [displayImgButtons, setDisplayImgButtons] = useState(false)
-
-    useEffect(() => {
-        if(props.screenWidth <= 1200) {
-            setDisplayImgButtons(true)
-        }
-    }, [props.screenWidth])
-
-    const handleClick = (url) => {
+    handleClick = (url) => {
         window.open(url, '_blank')
     }
 
-    const handleMouseEnter = (e) => {
+    handleMouseEnter = (e) => {
+        if(this.props.screenWidth <= 1200) {
+            return
+        }
         e.target.closest(".project-img").querySelector('img').classList.add('hover') // Add a nearest img's element "hover" class
     }
 
-    const handleMouseLeave = (e) => {
+    handleMouseLeave = (e) => {
+        if(this.props.screenWidth <= 1200) {
+            return
+        }
         e.target.closest(".project-img").querySelector('img').classList.remove('hover') // Remove a nearest's img element "hover" class
     }
 
-    const handleImgMouseEnter = (e) => {
+    handleImgMouseEnter = (e) => {
+        if(this.props.screenWidth <= 1200) {
+            return
+        }
         e.target.classList.add('hover')
     }
 
-    const handleImgMouseLeave = (e) => {
+     handleImgMouseLeave = (e) => {
+        if(this.props.screenWidth <= 1200) {
+            return
+        }
         e.target.classList.remove('hover')
     }
-
-    return (
+    render() {
+        return (
         <section className="projects-section" id="projects-section">
             <div className="project">
-                {displayImgButtons.toString()}
                 <div className="project-img">
                     <img
                         src={calculator}
                         alt=""
                         id="lol1"
-                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
-                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
-                        className={displayImgButtons ? "hover" : ""}
+                        onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
+                        className={this.props.screenWidth <= 1200 ? "hover" : ""}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
                                 Launch the site
                             </button>
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-code"></i>
                                 See code on GitHub
@@ -144,23 +147,23 @@ export default function Projects(props) {
                     <img
                         src={pokedexapp}
                         alt=""
-                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
-                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
+                        onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
                                 Open the site
                             </button>
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-code"></i>
                                 See code on GitHub
@@ -174,22 +177,22 @@ export default function Projects(props) {
                     <img
                         src={nodejs}
                         alt=""
-                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
-                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
+                        onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
                             </button>
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fab fa-github"></i>
                             </button>
@@ -272,22 +275,22 @@ export default function Projects(props) {
                     <img
                         src={pokelangapi}
                         alt=""
-                        onMouseEnter={(e) => {handleImgMouseEnter(e)}}
-                        onMouseLeave={(e) => {handleImgMouseLeave(e)}}
+                        onMouseEnter={(e) => {this.handleImgMouseEnter(e)}}
+                        onMouseLeave={(e) => {this.handleImgMouseLeave(e)}}
                     />
                     <div className="project-img-buttons-wrapper">
                         <div className="project-img-buttons">
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fas fa-globe"></i>
                             </button>
                             <button 
-                                onClick={() => {handleClick('https://www.google.com')}}
-                                onMouseEnter={(e) => {handleMouseEnter(e)}}
-                                onMouseLeave={(e) => {handleMouseLeave(e)}}
+                                onClick={() => {this.handleClick('https://www.google.com')}}
+                                onMouseEnter={(e) => {this.handleMouseEnter(e)}}
+                                onMouseLeave={(e) => {this.handleMouseLeave(e)}}
                             >
                                 <i class="fab fa-github"></i>
                             </button>
@@ -297,4 +300,5 @@ export default function Projects(props) {
             </div>
         </section>
     )
+    }
 }
