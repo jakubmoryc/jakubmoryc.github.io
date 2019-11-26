@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/./static/css/main.555e6f2e.chunk.css",
-    "main.js": "/./static/js/main.66109a11.chunk.js",
-    "main.js.map": "/./static/js/main.66109a11.chunk.js.map",
+    "main.css": "/./static/css/main.805f53ca.chunk.css",
+    "main.js": "/./static/js/main.c97f23a5.chunk.js",
+    "main.js.map": "/./static/js/main.c97f23a5.chunk.js.map",
     "runtime-main.js": "/./static/js/runtime-main.a60e84da.js",
     "runtime-main.js.map": "/./static/js/runtime-main.a60e84da.js.map",
     "static/js/2.6f6b9caf.chunk.js": "/./static/js/2.6f6b9caf.chunk.js",
     "static/js/2.6f6b9caf.chunk.js.map": "/./static/js/2.6f6b9caf.chunk.js.map",
     "index.html": "/./index.html",
-    "precache-manifest.0924c44f651e3bcf4a493623a0d555df.js": "/./precache-manifest.0924c44f651e3bcf4a493623a0d555df.js",
+    "precache-manifest.53673d84895b6a23e1758dc0e2a3f69c.js": "/./precache-manifest.53673d84895b6a23e1758dc0e2a3f69c.js",
     "service-worker.js": "/./service-worker.js",
-    "static/css/main.555e6f2e.chunk.css.map": "/./static/css/main.555e6f2e.chunk.css.map",
-    "static/media/calculator.png": "/./static/media/calculator.2f80e063.png",
+    "static/css/main.805f53ca.chunk.css.map": "/./static/css/main.805f53ca.chunk.css.map",
+    "static/media/calculator.png": "/./static/media/calculator.1eee6771.png",
     "static/media/nodejs.png": "/./static/media/nodejs.af70a646.png",
     "static/media/pokedexapp.png": "/./static/media/pokedexapp.ccaf101a.png",
     "static/media/pokelang-api.png": "/./static/media/pokelang-api.b0e928f9.png"
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a60e84da.js",
     "static/js/2.6f6b9caf.chunk.js",
-    "static/css/main.555e6f2e.chunk.css",
-    "static/js/main.66109a11.chunk.js"
+    "static/css/main.805f53ca.chunk.css",
+    "static/js/main.c97f23a5.chunk.js"
   ]
 }
