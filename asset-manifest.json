@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/./static/css/main.a7ce9758.chunk.css",
+    "main.css": "/./static/css/main.3db10a48.chunk.css",
     "main.js": "/./static/js/main.7bf7480e.chunk.js",
     "main.js.map": "/./static/js/main.7bf7480e.chunk.js.map",
     "runtime-main.js": "/./static/js/runtime-main.a60e84da.js",
@@ -8,9 +8,9 @@
     "static/js/2.6f6b9caf.chunk.js": "/./static/js/2.6f6b9caf.chunk.js",
     "static/js/2.6f6b9caf.chunk.js.map": "/./static/js/2.6f6b9caf.chunk.js.map",
     "index.html": "/./index.html",
-    "precache-manifest.f7cff14d2f12d3ab1db41c571d9f1e3a.js": "/./precache-manifest.f7cff14d2f12d3ab1db41c571d9f1e3a.js",
+    "precache-manifest.12e70d5e4089c9b3f87f2fe813b7de3c.js": "/./precache-manifest.12e70d5e4089c9b3f87f2fe813b7de3c.js",
     "service-worker.js": "/./service-worker.js",
-    "static/css/main.a7ce9758.chunk.css.map": "/./static/css/main.a7ce9758.chunk.css.map",
+    "static/css/main.3db10a48.chunk.css.map": "/./static/css/main.3db10a48.chunk.css.map",
     "static/media/calculator.png": "/./static/media/calculator.1eee6771.png",
     "static/media/nodejsscaled.png": "/./static/media/nodejsscaled.54e6196c.png",
     "static/media/pokedexapp.png": "/./static/media/pokedexapp.ccaf101a.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a60e84da.js",
     "static/js/2.6f6b9caf.chunk.js",
-    "static/css/main.a7ce9758.chunk.css",
+    "static/css/main.3db10a48.chunk.css",
     "static/js/main.7bf7480e.chunk.js"
   ]
 }
