@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/./static/css/main.d1de249c.chunk.css",
-    "main.js": "/./static/js/main.876d9fde.chunk.js",
-    "main.js.map": "/./static/js/main.876d9fde.chunk.js.map",
+    "main.css": "/./static/css/main.faaf65ad.chunk.css",
+    "main.js": "/./static/js/main.279448be.chunk.js",
+    "main.js.map": "/./static/js/main.279448be.chunk.js.map",
     "runtime-main.js": "/./static/js/runtime-main.a60e84da.js",
     "runtime-main.js.map": "/./static/js/runtime-main.a60e84da.js.map",
     "static/js/2.2080fa38.chunk.js": "/./static/js/2.2080fa38.chunk.js",
     "static/js/2.2080fa38.chunk.js.map": "/./static/js/2.2080fa38.chunk.js.map",
     "index.html": "/./index.html",
-    "precache-manifest.37b590502331504ce72e449ba241ad24.js": "/./precache-manifest.37b590502331504ce72e449ba241ad24.js",
+    "precache-manifest.31a5d04081f3d58f8376431150fe6d66.js": "/./precache-manifest.31a5d04081f3d58f8376431150fe6d66.js",
     "service-worker.js": "/./service-worker.js",
-    "static/css/main.d1de249c.chunk.css.map": "/./static/css/main.d1de249c.chunk.css.map",
+    "static/css/main.faaf65ad.chunk.css.map": "/./static/css/main.faaf65ad.chunk.css.map",
     "static/media/calculator.png": "/./static/media/calculator.1eee6771.png",
     "static/media/nodejsscaled.png": "/./static/media/nodejsscaled.54e6196c.png",
     "static/media/pokedexapp.png": "/./static/media/pokedexapp.ccaf101a.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a60e84da.js",
     "static/js/2.2080fa38.chunk.js",
-    "static/css/main.d1de249c.chunk.css",
-    "static/js/main.876d9fde.chunk.js"
+    "static/css/main.faaf65ad.chunk.css",
+    "static/js/main.279448be.chunk.js"
   ]
 }
